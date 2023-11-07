@@ -20,7 +20,7 @@ Fonts are separated by a | */
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
+  --paragraph-background-color: #084d7f  ;
   --nav-link-color: #396E94;
   --nav-background-color: #A8DADC;
   --nav-hover-link-color: white;
@@ -47,6 +47,10 @@ img {
 .picselect {
  display: flex;
   max-width: 50%;
+}
+
+.wireframes {
+  max-width: 70%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,6 +120,7 @@ nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
+  justify-content: center;
   font-size: 1.2em;
 }
 nav  {
