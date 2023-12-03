@@ -3,7 +3,9 @@
 }
 
 .top {
-    background-image: url(https://github.com/akylem100/thegoodoflife/blob/main/textwatermark.png?raw=true)
+    background-image: url(https://github.com/akylem100/thegoodoflife/blob/main/textwatermarkblue2.png?raw=true);
+    margin-top: -8px;
+    background-color: #1D3557
 }
 
 .logo {
@@ -15,26 +17,42 @@
     display: flex;
     padding-top: 20px;
     justify-content: space-around;
-    background-color: #03022F;
-    margin: 0;
+    background-color: #f1faef;
+    margin-right: 49px
 }
 
 nav a {
-    text-decoration: underline;
-    background-color: #03022F;
-    color: #ffffff;
+    text-decoration: none;
+    background-color: #f1faef;
+    color: #757575;
     padding-bottom: 20px;
     font-size: 0.8em
 }
 
-body {
+body, html {
+    margin: 0 0 0 0;
     font-family: Avnir-Light, Futura, sans-serif;
     font-size: 1.15em;
     background-color: #f1faee;
+    height: 100%;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url('mwimg2.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 #hero {
     display: grid;
+    margin-bottom: -14%
 }
 
 #herobox {
@@ -44,20 +62,21 @@ body {
 
 .heropic {
     width: 100%;
+    height: 75%
 }
 
 #energytriangle {
     background-color: transparent;
-    width: 110%;
-    margin-left: -4%;
-    margin-top: -7%
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -5%
 }
 
 #hero h1 {
     background-color: transparent;
-    padding: 20px;
     text-align: center;
-    color: #FFFFd9
+    color: #1d3557;
+    font-size: 1.5em
 }
 
 #herocont {
@@ -67,4 +86,107 @@ body {
     grid-row: 1/2;
     background-color: transparent;
     margin: 0 auto
+}
+
+.webpurpose {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    letter-spacing: 0.04em;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.webpurpose img {
+    grid-column: 3/10;
+    grid-row: 4/8;
+    margin-left: 50px
+}
+
+.webpurpose p {
+    grid-column: 5/10;
+    grid-row: 2/8;
+    width: 80%;
+    background-color: #A8DADC;
+    padding: 30px
+}
+
+.homequote {
+    margin-left: 420px;
+    line-height: 2.0em;
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    width: 55%;
+}
+
+.homequote h3 {
+    font-size: 1.9em;
+    line-height: 2.0em;
+}
+
+.purpose {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.3%;
+    padding-bottom: 1.8%;
+    width: 55%
+}
+
+.mwchart1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+#mwc1h1 {
+    color: #000000;
+    grid-column: 1/10;
+    grid-row: 3/10;
+    margin-left: -23%;
+    font-size: 2.6em;
+}
+
+.mwchart1 p {
+    grid-column: 3/10;
+    grid-row: 5/10;
+    width: 40%;
+    line-height: 1.5em;
+}
+
+#mwimg1 {
+    grid-column: 7/10;
+    grid-row: 3/10;
+    width: 110%;
+    margin-left: -22%;
+}
+
+.mwchart2 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.mwchart2 h1 {
+    grid-column: 6/10;
+    grid-row: 2/10;
+    font-size: 2.6em
+}
+
+.mwchart2 p {
+    grid-column: 7/10;
+    grid-row: 5/10;
+    width: 60%;
+    line-height: 1.5em;
+    margin-left: 3%;
+    font-size: 1.2em
+}
+
+#mwimg2 {
+    grid-column: 2/10;
+    grid-row: 2/10;
+    width: 50%
+
 }
