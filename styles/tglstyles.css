@@ -13,6 +13,12 @@
 
 }
 
+#mwh1 {
+    margin-top: -10%;
+    color: white;
+    margin-left: 4%;
+}
+
 .navbar {
     display: flex;
     padding-top: 20px;
@@ -23,8 +29,24 @@
 
 nav a {
     text-decoration: none;
-    background-color: #f1faef;
+    background-color: transparent;
     color: #757575;
+    padding-bottom: 20px;
+    font-size: 0.8em
+}
+
+.navbar2 {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+    background-color: #f1faef;
+    margin-right: 49px
+}
+
+.navbar2 a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #FFFFFF;
     padding-bottom: 20px;
     font-size: 0.8em
 }
@@ -39,12 +61,13 @@ body, html {
 
 .parallax {
     /* The image used */
-    background-image: url('mwimg2.jpg');
-  
+    background-image: url('https://github.com/akylem100/thegoodoflife/blob/main/mwimg2.jpg?raw=true');
+    margin-top: -60px;
     /* Full height */
     height: 100%; 
   
     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,21 +162,23 @@ body, html {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
+    margin-top: 5%;
 }
 
 #mwc1h1 {
     color: #000000;
     grid-column: 1/10;
     grid-row: 3/10;
-    margin-left: -23%;
+    margin-left: -43%;
     font-size: 2.6em;
 }
 
 .mwchart1 p {
-    grid-column: 3/10;
+    grid-column: 2/10;
     grid-row: 5/10;
     width: 40%;
     line-height: 1.5em;
+    letter-spacing: .05em;
 }
 
 #mwimg1 {
@@ -170,23 +195,33 @@ body, html {
 }
 
 .mwchart2 h1 {
-    grid-column: 6/10;
+    grid-column: 2/10;
     grid-row: 2/10;
-    font-size: 2.6em
+    font-size: 2.6em;
+    margin-left: 3%
 }
 
 .mwchart2 p {
-    grid-column: 7/10;
+    grid-column: 4/10;
     grid-row: 5/10;
     width: 60%;
     line-height: 1.5em;
-    margin-left: 3%;
-    font-size: 1.2em
+    margin-top: 4%;
+    margin-left: 4.5%;
+    font-size: 1.2em;
+    letter-spacing: .05em;
 }
 
 #mwimg2 {
     grid-column: 2/10;
     grid-row: 2/10;
     width: 50%
+}
 
+.moretext {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    line-height: 1.5em;
+    letter-spacing: .05em;
 }
