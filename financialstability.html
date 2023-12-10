@@ -9,60 +9,86 @@
 <body>
     <header>
         <div>
-        <a id="mainlogo" href="thegoodoflife.html">
-            <img class=logo width=180 src="thegoodoflifelogo.jpg" alt="img">
-        </a>
-            <nav class=navbar>
-                <a href="mentalwellness.html">Mental Wellness</a>
-                <a href="financialstability.html">Financial Stability</a>
-                <a href="thegoodoflife.html">Social Wellness</a>
-                <a href="thegoodoflife.html">Physical Fitness</a>
-                <a href="site-plan.html">Site Plan</a>
+            <nav class=navbar3>
+                <a href="thegoodoflife.html"><b>Home</b></a>
+                <a href="mentalwellness.html"><b>Mental Wellness</b></a>
+                <a href="financialstability.html"><b>Financial Stability</b></a>
+                <a href="thegoodoflife.html"><b>Social Wellness</b></a>
+                <a href="thegoodoflife.html"><b>Physical Fitness</b></a>
+                <a href="site-plan.html"><b>Site Plan</b></a>
             </nav>
         </div>
     </header>
-    <h1>Financial Literacy Fuels Freedom.</h1>
-    <div class="financialrow">
-        <img class="fsimage" src="fsimage1.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage2.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage3.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage4.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage5.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage6.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage7.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage8.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage9.jpg" alt="img" width="230">
-        <img class="fsimage" src="fsimage10.jpg" alt="img" width="230">
-    </div>
-    <p>
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <h1 id="fltitle">Financial Literacy Fuels Freedom.</h1>
+    <p id="fldesc">
         We all secretly want to live life as we please. Healthy financial habits will open the
-        door to abundant opportunities of freedom. There is so much information available on
-        the internet that will guide you to be better with money. Why would you need to be good
+        the door to abundant opportunities of freedom. There is information all over the internet
+        to guide you further! Why would you need to be good
         with money? Is financial life not more than just earning income and buying goods? We all
         love materialistic goods; however, learning to work hard and manange money may have a more
         significant meaning. We can become happier by knowing we are trying our best to do what is 
-        right. <br> What is right in the financial world? <br> <br>
+        right. <br> What is right in the financial world?
     </p>
-    <h1>Quick tips to be better financially today:</h1>
-    <p>
-        1. Build/fix credit score. <br> 2. Work beyond expectations. <br> 3. Resist impulse buying.
-        Do you really need that? <br> 4. Escape debt traps (pay off all debt asap). <br> 5. Stop
-        spending, start saving and investing. <br> 6. Donate, serve the needy. <br>
-    </p>
-    <h2>"Most people are afraid of not having money... if you focus everyday on your lack of
-        money, then your future will give you what you focus on."
-    </h2>
-    <h3>- Ryan Serhant</h3>
+    <section id="fltips">
+      <h1>Quick tips to be better financially today:</h1>
+      <p>
+          1. Build/fix credit score. <br> 2. Work beyond expectations. <br> 3. Resist impulse buying.
+          Do you really need that? <br> 4. Escape debt traps (pay off all debt asap). <br> 5. Stop
+          spending, start saving and investing. <br> 6. Donate, serve the needy. <br>
+      </p>
+    </section>
+    <section id="flquote">
+      <h2>"Most people are afraid of not having money... if you focus everyday on your lack of
+          money, then your future will give you what you focus on."
+      </h2>
+      <h3>- Ryan Serhant</h3>
+    </section>
     <footer>
         <div>
-            <nav class=navbar>
-                <a href="mentalwellness.html">Mental Wellness</a>
-                <a href="financialstability.html">Financial Stability</a>
-                <a href="thegoodoflife.html">Social Wellness</a>
-                <a href="thegoodoflife.html">Physical Fitness</a>
-                <a href="site-plan.html">Site Plan</a>
-            </nav>
+          <nav class=navbar4>
+            <a href="thegoodoflife.html"><b>Home</b></a>
+            <a href="mentalwellness.html"><b>Mental Wellness</b></a>
+            <a href="financialstability.html"><b>Financial Stability</b></a>
+            <a href="thegoodoflife.html"><b>Social Wellness</b></a>
+            <a href="thegoodoflife.html"><b>Physical Fitness</b></a>
+            <a href="site-plan.html"><b>Site Plan</b></a>
+        </nav>
         </div>
         </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
     </body>
     </html>
