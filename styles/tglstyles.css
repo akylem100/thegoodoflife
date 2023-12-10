@@ -331,8 +331,8 @@ body, html {
     font-size: 1.1em
 }
 
-.img1 { background-image: url("/fsimage7.jpg"); }
-.img2 { background-image: url("/fsimage1.jpg"); }
-.img3 { background-image: url("/fsimage6.jpg"); }
-.img4 { background-image: url("/fsimage2.jpg"); }
-.img5 { background-image: url("/fsimage3.jpg"); }
+.img1 { background-image: url("https://github.com/akylem100/thegoodoflife/blob/main/fsimage7.jpg?raw=true"); }
+.img2 { background-image: url("https://github.com/akylem100/thegoodoflife/blob/main/fsimage1.jpg?raw=true"); }
+.img3 { background-image: url("https://github.com/akylem100/thegoodoflife/blob/main/fsimage6.jpg?raw=true"); }
+.img4 { background-image: url("https://github.com/akylem100/thegoodoflife/blob/main/fsimage2.jpg?raw=true"); }
+.img5 { background-image: url("https://github.com/akylem100/thegoodoflife/blob/main/fsimage3.jpg?raw=true"); }
