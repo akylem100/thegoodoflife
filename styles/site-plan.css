@@ -30,6 +30,12 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+.rtw {
+  font-size: 1.8em;
+  color:#000000;
+  text-decoration:underline;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
